@@ -2,7 +2,7 @@ from django import forms
 from .models import Pizza
 
 class PizzaForm(forms.Form):
-    topping1 = forms.CharField(label='Topping 1', max_length=100, widget=forms.PasswordInput)
+    topping1 = forms.CharField(label='Topping 1', max_length=100, widget=forms.Textarea)
     topping2 = forms.CharField(label='Topping 1', max_length=100)
     size = forms.ChoiceField(label='Size', choices=[('Small', 'Small'), ('Medium', 'Medium'), ('Large', 'Large')])
 
